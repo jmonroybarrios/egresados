@@ -67,6 +67,18 @@
             height: 20px;
             margin-left: 20px;
         }
+
+        /* Media queries para dispositivos móviles */
+        @media only screen and (max-width: 767px) {
+            .b_frame {
+                width: 100%;
+                height: auto;
+            }
+
+            .col-md-6 {
+                margin-top: 10px;
+            }
+        }
     </style>
     <script>
         function deviceOS() {
@@ -94,10 +106,10 @@
     </script>
 </head>
 
-<body class="website white">
+<body>
     <div id="wrapper">
         <header id="header">
-            <nav class="navbar navbar-inverse" role="navigation">
+            <nav class="navbar navbar-default navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse"
