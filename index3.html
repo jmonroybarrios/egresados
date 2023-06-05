@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="referrer" content="no-referrer" />
+    <title>Seguimiento de Egresados</title>
+    <link rel="icon" type="image/png" href="" />
+    <meta property="og:title" content="Egresados" />
+    <meta property="og:description" content="" />
+    <meta property="og:locale" content="es" />
+    <meta property="og:image" content="" />
+    <link href="https://static.dialogflow.com/common/website-poly.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f4f5f5 !important;
+            font-family: Roboto, "Helvetica Neue", sans-serif;
+            font-weight: 300;
+        }
+
+        #wrapper {
+            display: none;
+            min-height: 100%;
+            margin-bottom: auto;
+        }
+
+        #main {
+            padding-bottom: 100px;
+            margin: 20px auto 0 auto;
+        }
+
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .b_frame {
+            box-shadow: 0 19px 147px -41px rgba(0, 0, 0, 0.75);
+            border: 0;
+            width: 400px;
+            height: 530px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .col-md-6 {
+            margin-top: 30px;
+            padding: 0;
+        }
+
+        .b-agent-demo_powered_by a {
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-decoration: none;
+        }
+
+        .b-agent-demo_powered_by span {
+            display: inline-block;
+            color: #b7bbc4;
+            text-transform: uppercase;
+            line-height: 20px;
+        }
+
+        .b-agent-demo_powered_by img {
+            display: inline-block;
+            height: 20px;
+            margin-left: 20px;
+        }
+    </style>
+    <script>
+        function deviceOS() {
+            var useragent = navigator.userAgent;
+            if (useragent.match(/Android/i)) {
+                return "android";
+            } else if (useragent.match(/webOS/i)) {
+                return "webos";
+            } else if (useragent.match(/iPhone|iPad|iPod/i)) {
+                return "ios";
+            } else if (useragent.match(/Windows Phone/i)) {
+                return "windows phone";
+            } else if (useragent.match(/SymbianOS/i)) {
+                return "symbian";
+            } else if (useragent.match(/RIM/i) || useragent.match(/BB/i)) {
+                return "blackberry";
+            } else {
+                return false;
+            }
+        }
+
+        if (deviceOS()) {
+            location.href = "/api-client/demo/embedded/9405c5b0-ca01-456e-ab3e-4b9609478513";
+        }
+    </script>
+</head>
+
+<body class="website white">
+    <div id="wrapper">
+        <header id="header">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="https://www.usmpvirtual.edu.pe/"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="https://usmpaqp.edu.pe/grados-y-titulos/" target="_blank">GRADOS Y
+                                    TÍTULOS<span></span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.usmpvirtual.edu.pe/" target="_blank">OFERTA
+                                    LABORAL<span></span></a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="sign-up">
+                                <a href="https://www.usmpvirtual.edu.pe/">Inicio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="main" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Seguimiento de Egresados</h1>
+                    <h2></h2>
+                    <br /><br />
+                    <p>¡Hablemos de tu carrera profesional! Ingresa una pregunta para iniciar una conversación con
+                        nuestro chatbot.</p>
+                    <pre>Ejemplo: ¿Necesito ingresar la información del egresado?</pre>
+                    <pre>Ejemplo: Quiero registrar a un nuevo egresado en la base de datos</pre>
+                </div>
+                <div class="col-md-6">
+                    <iframe id="frame" class="b_frame" allow="microphone;"
+                        src="https://console.dialogflow.com/api-client/demo/embedded/9405c5b0-ca01-456e-ab3e-4b9609478513"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="b-agent-demo_powered_by">
+            <a href="https://dialogflow.com" target="_blank">
+                <span>Desarrollado por USMP</span>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

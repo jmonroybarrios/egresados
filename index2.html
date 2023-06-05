@@ -1,20 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-    <iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/9405c5b0-ca01-456e-ab3e-4b9609478513">
-</iframe>  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .description {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 75%;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            <img src="logo.png" alt="Logo" class="logo">
+            Web Design Example
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="description">
+                    <h2>Welcome to our Chatbot!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium suscipit consectetur.
+                        Suspendisse potenti. In tempus eleifend rutrum. Fusce volutpat urna at consectetur tristique.
+                        Pellentesque sit amet tincidunt velit, vitae iaculis dui. Vestibulum ante ipsum primis in
+                        faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                    <p>Mauris eu massa sed ligula porttitor ultrices vel et elit. Aenean dictum tristique justo, eu
+                        cursus lacus consequat nec. Fusce nec leo in nisi aliquet scelerisque. Nunc commodo felis
+                        vitae tincidunt posuere. Nulla vitae malesuada tortor. Etiam euismod risus quis magna laoreet
+                        fermentum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="iframe-container">
+                    <iframe allow="microphone;" width="350" height="430"
+                        src="https://console.dialogflow.com/api-client/demo/embedded/9405c5b0-ca01-456e-ab3e-4b9609478513">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Developed by USMP</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
