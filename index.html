@@ -8,45 +8,8 @@
     <meta property="og:description" content="" />
     <meta property="og:locale" content="es" />
     <meta property="og:image" content="" />
-    <link
-      href="https://static.dialogflow.com/common/website-poly.min.css"
-      rel="stylesheet"
-      nonce="Es-YK1AmSZvfgruTvwXiQA"
-    />
-    <style nonce="Es-YK1AmSZvfgruTvwXiQA">
-      @-moz-keyframes blink {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      } /* Firefox */
-      @-webkit-keyframes blink {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      } /* Webkit */
-      @-ms-keyframes blink {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      } /* IE */
+    <link href="https://static.dialogflow.com/common/website-poly.min.css" rel="stylesheet" />
+    <style>
       @keyframes blink {
         0% {
           opacity: 1;
@@ -57,7 +20,7 @@
         100% {
           opacity: 1;
         }
-      } /* Opera and prob css3 final iteration */
+      }
 
       #preloader {
         background: #fff;
@@ -69,7 +32,6 @@
         z-index: 999999;
         opacity: 1;
         filter: alpha(opacity=100);
-        -webkit-transition: opacity 500ms ease;
         transition: opacity 500ms ease, display 500ms;
       }
 
@@ -84,16 +46,8 @@
         top: 50%;
         left: 50%;
         margin: -20px 0 0 -55px;
-        -moz-transition: all 1s ease-in-out;
-        -webkit-transition: all 1s ease-in-out;
-        -o-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
-        /* order: name, direction, duration, iteration-count, timing-function */
-        -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
-        -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
-        -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
-        animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+        animation: blink normal 2s infinite ease-in-out;
       }
 
       .navbar-brand {
@@ -116,9 +70,8 @@
         font-size: 14px;
         font-weight: 300;
         padding: 0;
-        display: block; /* Fallback for non-webkit */
         display: -webkit-box;
-        max-height: 258px; /* Fallback for non-webkit */
+        max-height: 258px;
         line-height: 2.3;
         -webkit-line-clamp: 8;
         -webkit-box-orient: vertical;
@@ -148,8 +101,6 @@
       }
 
       .b_frame {
-        -webkit-box-shadow: 0 19px 147px -41px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0 19px 147px -41px rgba(0, 0, 0, 0.75);
         box-shadow: 0 19px 147px -41px rgba(0, 0, 0, 0.75);
         border: 0;
         width: 400px;
@@ -158,6 +109,7 @@
         margin: 0 auto;
         margin-bottom: 40px;
       }
+
       .col-md-6 {
         margin-top: 30px;
         padding: 0;
@@ -166,10 +118,12 @@
       .b_integrations_agent_links {
         margin-top: 50px;
       }
+
       .b_integrations_agent_links a {
         color: black;
         margin-right: 30px;
       }
+
       .b_integrations_agent_links a i {
         color: gray;
         margin-right: 10px;
@@ -185,14 +139,10 @@
       footer#footer {
         background-color: white;
         text-align: center;
-
         position: relative;
-        margin-top: -81px; /* negative value of footer height */
+        margin-top: -81px;
         height: 80px;
         clear: both;
-      }
-
-      .b-agent-demo_powered_by {
       }
 
       .b-agent-demo_powered_by a {
@@ -208,31 +158,22 @@
         text-transform: uppercase;
         line-height: 20px;
       }
+
       .b-agent-demo_powered_by img {
         display: inline-block;
         height: 20px;
         margin-left: 20px;
       }
     </style>
-    <script nonce="sB9vGlraMwzV_jpwFZ1ozA">
-      // redirect to mobile version
-
-      /**
-       * definitely not the best way to findout if there is a mobile browser
-       * @return {any}
-       */
+    <script>
       function deviceOS() {
         var useragent = navigator.userAgent;
         if (useragent.match(/Android/i)) {
           return "android";
         } else if (useragent.match(/webOS/i)) {
           return "webos";
-        } else if (useragent.match(/iPhone/i)) {
-          return "iphone";
-        } else if (useragent.match(/iPod/i)) {
-          return "ipod";
-        } else if (useragent.match(/iPad/i)) {
-          return "ipad";
+        } else if (useragent.match(/iPhone|iPad|iPod/i)) {
+          return "ios";
         } else if (useragent.match(/Windows Phone/i)) {
           return "windows phone";
         } else if (useragent.match(/SymbianOS/i)) {
@@ -245,13 +186,14 @@
       }
 
       if (deviceOS()) {
-        location.href =
-          "/api-client/demo/embedded/9405c5b0-ca01-456e-ab3e-4b9609478513";
+        location.href = "/api-client/demo/embedded/9405c5b0-ca01-456e-ab3e-4b9609478513";
       }
     </script>
   </head>
   <body class="website white">
-    <div id="preloader"><div class="logo"></div></div>
+    <div id="preloader">
+      <div class="logo"></div>
+    </div>
     <div id="wrapper">
       <header id="header">
         <nav class="navbar navbar-inverse" role="navigation">
@@ -263,34 +205,25 @@
                 data-toggle="collapse"
                 data-target="#bs-example-navbar-collapse-1"
               >
-                <span class="sr-only">Toggle navigation</span
-                ><span class="icon-bar"></span><span class="icon-bar"></span
-                ><span class="icon-bar"></span></button
-              ><a class="navbar-brand" href="https://www.usmpvirtual.edu.pe/"></a>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="https://www.usmpvirtual.edu.pe/"></a>
             </div>
-            <div
-              class="collapse navbar-collapse"
-              id="bs-example-navbar-collapse-1"
-            >
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li>
-                  <a
-                    href="https://usmpaqp.edu.pe/grados-y-titulos/"
-                    target="_blank"
-                    >GRADOS Y TÍTULOS<span></span
-                  ></a>
+                  <a href="https://usmpaqp.edu.pe/grados-y-titulos/" target="_blank">GRADOS Y TÍTULOS<span></span></a>
                 </li>
                 <li>
-                  <a href="https://www.usmpvirtual.edu.pe/" target="_blank"
-                    >OFERTA LABORAL<span></span
-                  ></a>
+                  <a href="https://www.usmpvirtual.edu.pe/" target="_blank">OFERTA LABORAL<span></span></a>
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li class="sign-up">
-                  <a href="https://www.usmpvirtual.edu.pe/"
-                    >Inicio</a
-                  >
+                  <a href="https://www.usmpvirtual.edu.pe/">Inicio</a>
                 </li>
               </ul>
             </div>
@@ -304,31 +237,21 @@
             <h2></h2>
             <br /><br />
             <p>¡Hablemos de tu carrera profesional! Ingresa una pregunta para iniciar una conversación con nuestro chatbot.</p>
-            <pre>
-Ejemplo:¿Necesito ingresar la información del egresado?</pre
-            >
-            <pre>
-Ejemplo:Quiero registrar a un nuevo egresado en la base de datos</pre
-                            >
+            <pre>Ejemplo: ¿Necesito ingresar la información del egresado?</pre>
+            <pre>Ejemplo: Quiero registrar a un nuevo egresado en la base de datos</pre>
           </div>
           <div class="col-md-6">
-            <iframe
-              id="frame"
-              class="b_frame"
-              allow="microphone;"
-              src="https://console.dialogflow.com/api-client/demo/embedded/9405c5b0-ca01-456e-ab3e-4b9609478513"
-            ></iframe>
+            <iframe id="frame" class="b_frame" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/9405c5b0-ca01-456e-ab3e-4b9609478513"></iframe>
           </div>
         </div>
       </div>
     </div>
     <footer id="footer">
       <div class="b-agent-demo_powered_by">
-        <a href="https://dialogflow.com" target="_blank"
-          ><span>Desarrollado por USMP</span
-          ></a>
+        <a href="https://dialogflow.com" target="_blank">
+          <span>Desarrollado por USMP</span>
+        </a>
       </div>
     </footer>
-    <script nonce="sB9vGlraMwzV_jpwFZ1ozA"></script>
   </body>
 </html>
